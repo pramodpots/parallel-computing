@@ -11,7 +11,7 @@ void read_encrypted_file(int*);
 
 
 /* Exercise 1.1 */
-int modulo(int a, int b){
+__device__ int modulo(int a, int b){
 	int r = a % b;
 	r = (r < 0) ? r + b : r;
 	return r;
